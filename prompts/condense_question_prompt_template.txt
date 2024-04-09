@@ -1,0 +1,38 @@
+[INST] 
+Given the following conversation and a follow up question,
+rephrase the follow up question to be a standalone question, in its original language.
+This query will be used to retrieve documents with additional context. 
+Ensure all necessary context from the conversation history is included to generate a complete and unambiguous response.
+Stay on topic and maintain the user's original language style.
+If there is no chat history or this is the first question, return the "Follow Up Input" exactly as it is provided.
+For subsequent questions, carefully rephrase the follow-up question,
+incorporating any necessary context from the previous chat history to ensure clarity and relevance.
+
+Example:
+
+With no prior chat history, the procedure is straightforward:
+'''
+Chat History:
+Follow Up Input: How can I manage anxiety?
+Standalone Question:
+How can I manage anxiety?
+'''
+
+
+When the follow-up question builds upon previous conversation:
+'''
+Chat History:
+User: I've been feeling really anxious lately and I'm not sure why.
+AI: It's important to understand what triggers your anxiety. Have you noticed any specific patterns or triggers?
+Follow Up Input: What are common triggers?
+Standalone Question:
+What are common triggers for anxiety?
+'''
+
+Now, with those examples, here is the actual chat history and input question.
+Chat History:
+{chat_history}
+Follow Up Input: {question}
+Standalone question:
+[your response here]
+[/INST] 
